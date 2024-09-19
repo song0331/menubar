@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메뉴바</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7ff;
+    }
+
+    .menu-list {
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #fffbfe;
+      display: flex;
+    }
+
+    .menu {
+      float: left;
+      width: 25%;
+      line-height: 50px;
+      position: relative;
+      background-color: #6c757d;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .menu a {
+      color: #fafafa;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .menu:hover {
+      background-color: #ff7096;
+    }
+
+    .menu:hover .sub-menu {
+      display: block;
+    }
+
+    .sub-menu {
+      list-style: none;
+      position: absolute;
+      display: none;
+      padding-left: 0;
+      background-color: #f7f5f2;
+      width: 100%;
+      top: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sub-menu li {
+      text-align: center;
+      cursor: pointer;
+      padding: 12px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .sub-menu li:hover {
+      background-color: #ffe3e3;
+    }
+
+    .sub-menu li a {
+      color: #3a3a3a;
+      font-weight: 500;
+    }
+
+    .sub-menu li:hover a {
+      color: #ff7096;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="menu-list">
+      <li class="menu"><a href="#">메뉴1</a></li>
+
+      <li class="menu"><a href="#">메뉴2</a>
+        <ul class="sub-menu">
+          <li><a href="#">서브메뉴1</a></li>
+          <li><a href="#">서브메뉴2</a></li>
+        </ul>
+      </li>
+
+      <li class="menu"><a href="#">메뉴3</a>
+        <ul class="sub-menu">
+          <li><a href="#">서브메뉴1</a></li>
+          <li><a href="#">서브메뉴2</a></li>
+          <li><a href="#">서브메뉴3</a></li>
+        </ul>
+      </li>
+
+      <li class="menu"><a href="#">메뉴4</a>
+        <ul class="sub-menu">
+          <li><a href="#">서브메뉴1</a></li>
+          <li><a href="#">서브메뉴2</a></li>
+          <li><a href="#">서브메뉴3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+</html>
